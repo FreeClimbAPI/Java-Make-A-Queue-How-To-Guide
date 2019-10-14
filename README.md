@@ -1,9 +1,8 @@
-# Node - Make a Queue Tutorial
+# Java - Make a Queue Tutorial
 
 This project serves as a guide to help you build an application with Persephony. Specifically, the project will:
 
-- Makes a call queue 
-- Get the details of the queue
+- Makes a queue which can be used to enqueue callers
 
 ## Setting up your new app within your Persephony account
 
@@ -11,13 +10,7 @@ To get started using a persephony account, follow the instructions [here](https:
 
 ## Setting up the Tutorial
 
-1. Install the node packages necessary using command:
-
-   ```bash
-   $ yarn install
-   ```
-
-2. Configure environment variables.
+1. Configure environment variables.
 
    | ENV VARIABLE            | DESCRIPTION                                                                                                                                                                             |
    | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

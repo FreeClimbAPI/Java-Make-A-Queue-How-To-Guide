@@ -9,9 +9,9 @@ package main.java.make_queue;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.vailsys.persephony.api.PersyClient;
-import com.vailsys.persephony.api.PersyException;
-import com.vailsys.persephony.api.queue.QueueCreateOptions;
+import com.vailsys.freeclimb.api.FreeClimbClient;
+import com.vailsys.freeclimb.api.FreeClimbException;
+import com.vailsys.freeclimb.api.queue.QueueCreateOptions;
 
 @RestController
 public class MakeQueueController {
@@ -27,12 +27,12 @@ public class MakeQueueController {
     options.setMaxSize(25);
 
     try {
-      // Create PersyClient object
-      PersyClient client = new PersyClient(accountId, authToken);
+      // Create FreeClimbClient object
+      FreeClimbClient client = new FreeClimbClient(accountId, authToken);
 
       // Invoke method to create a queue with the options provided
       client.queues.create(options);
-    } catch (PersyException pe) {
+    } catch (FreeClimbException pe) {
       System.out.println(pe.getMessage());
     }
   }

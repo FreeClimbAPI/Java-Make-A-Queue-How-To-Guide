@@ -15,9 +15,9 @@ import com.vailsys.freeclimb.api.queue.QueueCreateOptions;
 
 @RestController
 public class MakeQueueController {
-  // Get accountID and authToken from environment variables
+  // Get accountID and apiKey from environment variables
   private String accountId = System.getenv("ACCOUNT_ID");
-  private String authToken = System.getenv("AUTH_TOKEN");
+  private String apiKey = System.getenv("API_KEY");
 
   @RequestMapping("/makeQueue")
   public void makeQueue() {
@@ -28,7 +28,7 @@ public class MakeQueueController {
 
     try {
       // Create FreeClimbClient object
-      FreeClimbClient client = new FreeClimbClient(accountId, authToken);
+      FreeClimbClient client = new FreeClimbClient(accountId, apiKey);
 
       // Invoke method to create a queue with the options provided
       client.queues.create(options);

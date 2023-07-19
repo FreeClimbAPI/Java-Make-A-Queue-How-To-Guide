@@ -12,15 +12,15 @@ To get started using a FreeClimb account, follow the instructions [here](https:/
 
 1. Configure environment variables.
 
-   | ENV VARIABLE | DESCRIPTION                                                                                                                              |
-   | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-   | ACCOUNT_ID   | Account ID which can be found under [API credentials](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard           |
-   | API_KEY   | API key which can be found under [API credentials](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard |
+   | ENV VARIABLE | DESCRIPTION                                                                                                                           |
+   | ------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+   | ACCOUNT_ID   | Account ID which can be found under [API credentials](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard |
+   | API_KEY      | API key which can be found under [API credentials](https://www.freeclimb.com/dashboard/portal/account/authentication) in Dashboard    |
 
 ## Building and Runnning the Tutorial
 
 1. Build and run the application using command:
 
    ```bash
-   $ gradle build && java -Dserver.port=3000 -jar build/libs/gs-spring-boot-0.1.0.jar
+   gradle build && java -Dserver.port=3000 -jar build/libs/Java-Make-A-Queue-Tutorial-3.0.6-plain.jar
    ```
